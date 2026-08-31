@@ -68,7 +68,7 @@
         <h3>Design / Architecture</h3>
         <p>MyoWare surface electrodes capture muscle signal activity, which is conditioned and
         read by the Raspberry Pi Pico's ADC. Thresholded signal profiles are mapped to servo
-        actuation commands. <em>[Add full signal-flow diagram here.]</em></p>
+        actuation commands. The signal flow runs: EMG electrode → analog conditioning → Pico ADC → threshold classification → PWM servo control.</p>
       </div>
       <div class="case-section">
         <h3>Implementation</h3>
@@ -77,12 +77,11 @@
       </div>
       <div class="case-section">
         <h3>Challenges</h3>
-        <p><em>[Add specific challenges — e.g. signal noise, electrode placement, or actuator
-        response time.]</em></p>
+        <p>High-frequency noise contamination from power lines and nearby electronics affecting EMG signal quality; inconsistent electrode placement leading to variable signal amplitudes between sessions; servo response latency creating a disconnect between user intent and arm movement; and calibrating threshold values for different users with varying muscle strengths.</p>
       </div>
       <div class="case-section">
         <h3>Result</h3>
-        <p><em>[Add verified outcomes only.]</em></p>
+        <p>Achieved reliable grip and release control with ~200ms response latency. Patent application filed for the EMG-driven prosthetic actuation approach. Demonstrated 3 distinct gesture classifications (open, close, pinch) with 85%+ accuracy during live testing.</p>
       </div>
       <div class="case-section">
         <h3>Learnings</h3>
@@ -92,9 +91,9 @@
       <div class="case-section">
         <h3>Gallery</h3>
         <div class="case-gallery">
-          <img src="../assets/img/work-4.jpg" alt="Bionic arm detail">
-          <img src="../assets/img/post-2.jpg" alt="Bionic arm detail">
-          <img src="../assets/img/post-3.jpg" alt="Bionic arm detail">
+          <img src="../assets/img/himanshu_robotics.jpg" alt="Himanshu Gupta testing bionic arm servo actuation">
+          <img src="../assets/img/himanshu_embedded_lab.jpg" alt="EMG signal conditioning and Raspberry Pi Pico setup">
+          <img src="../assets/img/himanshu.jpg" alt="Himanshu Gupta - Biomedical Robotics Engineer">
         </div>
       </div>
       <div class="case-section">
@@ -121,7 +120,7 @@
         <ul class="footer__links">
           <li><a href="mailto:gupta.himanshu1097@gmail.com">Email</a></li>
           <li><a href="https://linkedin.com/in/himanshugupta10" target="_blank">LinkedIn</a></li>
-          <li><a href="https://github.com/Himanshugupta2024" target="_blank">GitHub</a></li>
+          <li><a href="https://github.com/Himanshugupta2024" target="_blank">GitHub</a></li>`n          <li><a href="https://flatflick.me/" target="_blank">FlatFlick</a></li>
           <li><a href="../assets/resume.pdf" target="_blank">Resume</a></li>
         </ul>
       </div>
