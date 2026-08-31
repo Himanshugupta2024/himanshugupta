@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bionic Arm Using EMG Sensors — Himanshu Gupta</title>
+  <link rel="icon" href="../assets/img/favicon.png">
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__brand">Himanshu Gupta</a>
+      <ul class="nav__links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../work.html" class="is-active">Work</a></li>
+        <li><a href="../patents.html">Patents</a></li>
+        <li><a href="../research.html">Research</a></li>
+        <li><a href="../notes.html">Notes</a></li>
+        <li><a href="../assets/resume.pdf" target="_blank">Resume</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+    </div>
+  </header>
+
+  <section class="case-hero">
+    <div class="container">
+      <div class="case-hero__meta"><span>Robotics</span><span>Biomedical</span><span>Patent Filed</span></div>
+      <h1 class="headline-xl">BIONIC ARM USING EMG SENSORS</h1>
+      <p class="case-hero__statement lede">Turning muscle signals into motion.</p>
+      <div class="case-hero__media">
+        <img src="../assets/img/himanshu_robotics.jpg" alt="Himanshu Gupta with Bionic Arm Using EMG Sensors">
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal">
+    <div class="container case-body">
+      <div class="case-section">
+        <h3>Overview</h3>
+        <p>An EMG-based control system using MyoWare sensors and a Raspberry Pi Pico for
+        real-time, muscle-driven servo actuation of a robotic arm. Patent filed.</p>
+      </div>
+      <div class="case-section">
+        <h3>The Problem</h3>
+        <p>Prosthetic and assistive arm systems need an intuitive way to translate a user's
+        intended movement into robotic motion without complex manual controls.</p>
+      </div>
+      <div class="case-section">
+        <h3>The Idea</h3>
+        <p>Capture EMG (electromyography) signals from the forearm using MyoWare sensors, process
+        them on a Raspberry Pi Pico, and map them to real-time servo actuation.</p>
+      </div>
+      <div class="case-section">
+        <h3>My Role</h3>
+        <p>End-to-end system design: EMG signal acquisition, ADC/DAC signal conditioning on the
+        Raspberry Pi Pico, and the servo control logic.</p>
+      </div>
+      <div class="case-section">
+        <h3>Technology</h3>
+        <div class="tag-list">
+          <span>MyoWare EMG Sensors</span><span>Raspberry Pi Pico</span><span>ADC/DAC</span><span>Servo Actuation</span><span>C</span>
+        </div>
+      </div>
+      <div class="case-section">
+        <h3>Design / Architecture</h3>
+        <p>MyoWare surface electrodes capture muscle signal activity, which is conditioned and
+        read by the Raspberry Pi Pico's ADC. Thresholded signal profiles are mapped to servo
+        actuation commands. <em>[Add full signal-flow diagram here.]</em></p>
+      </div>
+      <div class="case-section">
+        <h3>Implementation</h3>
+        <p>Raw EMG signals are filtered and thresholded before being mapped to specific
+        arm/gripper movements, driving the servo motors in real time.</p>
+      </div>
+      <div class="case-section">
+        <h3>Challenges</h3>
+        <p><em>[Add specific challenges — e.g. signal noise, electrode placement, or actuator
+        response time.]</em></p>
+      </div>
+      <div class="case-section">
+        <h3>Result</h3>
+        <p><em>[Add verified outcomes only.]</em></p>
+      </div>
+      <div class="case-section">
+        <h3>Learnings</h3>
+        <p>This project deepened my understanding of biosignal noise handling — clean signal
+        acquisition matters as much as the control logic built on top of it.</p>
+      </div>
+      <div class="case-section">
+        <h3>Gallery</h3>
+        <div class="case-gallery">
+          <img src="../assets/img/work-4.jpg" alt="Bionic arm detail">
+          <img src="../assets/img/post-2.jpg" alt="Bionic arm detail">
+          <img src="../assets/img/post-3.jpg" alt="Bionic arm detail">
+        </div>
+      </div>
+      <div class="case-section">
+        <h3>Related Patents</h3>
+        <p><a href="../patents.html" class="link-arrow">Bionic Arm Using EMG Sensors — Patent Filed →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <a href="smart-shoes.html" class="case-next" style="display:block;">
+    <div class="container">
+      <div class="case-next__label">Next Project</div>
+      <div class="case-next__title">Advanced Smart Shoes →</div>
+    </div>
+  </a>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand">Himanshu Gupta</div>
+          <div class="footer__role">Engineer · Inventor · Builder</div>
+        </div>
+        <ul class="footer__links">
+          <li><a href="mailto:gupta.himanshu1097@gmail.com">Email</a></li>
+          <li><a href="https://linkedin.com/in/himanshugupta10" target="_blank">LinkedIn</a></li>
+          <li><a href="https://github.com/Himanshugupta2024" target="_blank">GitHub</a></li>
+          <li><a href="../assets/resume.pdf" target="_blank">Resume</a></li>
+        </ul>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span data-year></span> Himanshu Gupta</span>
+        <span>Engineering · Innovation · IoT · Robotics · AI · Solar PV</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

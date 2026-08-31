@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autonomous Vehicle Prototype with Opti-Vision — Himanshu Gupta</title>
+  <link rel="icon" href="../assets/img/favicon.png">
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__brand">Himanshu Gupta</a>
+      <ul class="nav__links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../work.html" class="is-active">Work</a></li>
+        <li><a href="../patents.html">Patents</a></li>
+        <li><a href="../research.html">Research</a></li>
+        <li><a href="../notes.html">Notes</a></li>
+        <li><a href="../assets/resume.pdf" target="_blank">Resume</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+    </div>
+  </header>
+
+  <section class="case-hero">
+    <div class="container">
+      <div class="case-hero__meta"><span>Robotics</span><span>AI</span><span>Patent No. 202411078533</span></div>
+      <h1 class="headline-xl">AUTONOMOUS VEHICLE PROTOTYPE WITH OPTI-VISION</h1>
+      <p class="case-hero__statement lede">Teaching a small vehicle to see and decide for itself.</p>
+      <div class="case-hero__media">
+        <img src="../assets/img/himanshu_robotics.jpg" alt="Himanshu Gupta testing Autonomous Vehicle Perception with Opti-Vision">
+      </div>
+    </div>
+  </section>
+
+  <section class="section reveal">
+    <div class="container case-body">
+      <div class="case-section">
+        <h3>Overview</h3>
+        <p>A Raspberry Pi-based embedded vision system ("Opti-Vision") built for an autonomous
+        vehicle prototype, featuring lane tracking, signal recognition, and obstacle detection
+        using OpenCV. Published patent application (No. 202411078533).</p>
+      </div>
+      <div class="case-section">
+        <h3>The Problem</h3>
+        <p>Manually driven or remote-controlled vehicles depend entirely on an operator — there's
+        no ability to perceive and react to the environment independently.</p>
+      </div>
+      <div class="case-section">
+        <h3>The Idea</h3>
+        <p>Give a small vehicle platform a camera-based perception layer so it can track lanes,
+        recognize signals, and detect obstacles without direct manual control.</p>
+      </div>
+      <div class="case-section">
+        <h3>My Role</h3>
+        <p>Concept and system design for the vision pipeline (lane tracking, signal recognition,
+        obstacle detection) and its integration with the vehicle's control logic.</p>
+      </div>
+      <div class="case-section">
+        <h3>Technology</h3>
+        <div class="tag-list">
+          <span>Raspberry Pi</span><span>OpenCV</span><span>Python</span><span>Computer Vision</span>
+        </div>
+      </div>
+      <div class="case-section">
+        <h3>Design / Architecture</h3>
+        <p>Camera feed → OpenCV processing for lane tracking, traffic signal recognition, and
+        obstacle detection → decision logic → vehicle motor control.
+        <em>[Add full system diagram here.]</em></p>
+      </div>
+      <div class="case-section">
+        <h3>Implementation</h3>
+        <p><em>[Add implementation details — hardware platform, processing approach, control loop.]</em></p>
+      </div>
+      <div class="case-section">
+        <h3>Challenges</h3>
+        <p><em>[Add specific challenges — e.g. real-time processing constraints on Raspberry Pi, lighting variation, latency.]</em></p>
+      </div>
+      <div class="case-section">
+        <h3>Result</h3>
+        <p><em>[Add verified outcomes only.]</em></p>
+      </div>
+      <div class="case-section">
+        <h3>Learnings</h3>
+        <p>This prototype reinforced how tightly perception and control have to work together —
+        a vision system is only useful if the vehicle can act on what it sees fast enough.</p>
+      </div>
+      <div class="case-section">
+        <h3>Gallery</h3>
+        <div class="case-gallery">
+          <img src="../assets/img/work-1.jpg" alt="Autonomous vehicle detail">
+          <img src="../assets/img/post-2.jpg" alt="Autonomous vehicle detail">
+          <img src="../assets/img/post-3.jpg" alt="Autonomous vehicle detail">
+        </div>
+      </div>
+      <div class="case-section">
+        <h3>Related Patents</h3>
+        <p><a href="../patents.html" class="link-arrow">Autonomous Vehicle Prototype with Opti-Vision — Patent No. 202411078533 →</a></p>
+      </div>
+      <div class="case-section">
+        <h3>Related Projects</h3>
+        <p>
+          <a href="night-vision-adas.html" class="link-arrow">Night Vision Driver Assistance →</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <a href="shelternext.html" class="case-next" style="display:block;">
+    <div class="container">
+      <div class="case-next__label">Next Project</div>
+      <div class="case-next__title">ShelterLink — IoT Smart Disaster Shelter →</div>
+    </div>
+  </a>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand">Himanshu Gupta</div>
+          <div class="footer__role">Engineer · Inventor · Builder</div>
+        </div>
+        <ul class="footer__links">
+          <li><a href="mailto:gupta.himanshu1097@gmail.com">Email</a></li>
+          <li><a href="https://linkedin.com/in/himanshugupta10" target="_blank">LinkedIn</a></li>
+          <li><a href="https://github.com/Himanshugupta2024" target="_blank">GitHub</a></li>
+          <li><a href="../assets/resume.pdf" target="_blank">Resume</a></li>
+        </ul>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span data-year></span> Himanshu Gupta</span>
+        <span>Engineering · Innovation · IoT · Robotics · AI · Solar PV</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineering Notes — Himanshu Gupta</title>
+  <meta name="description" content="Short notes on solar PV, communication protocols, computer vision, and embedded systems concepts.">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">Himanshu Gupta</a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="patents.html">Patents</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="notes.html" class="is-active">Notes</a></li>
+        <li><a href="assets/resume.pdf" target="_blank">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+    </div>
+  </header>
+
+  <section class="hero" style="padding-bottom: 24px;">
+    <div class="container">
+      <span class="eyebrow">Engineering Notes</span>
+      <h1 class="headline-xl">THINGS I'M<br>LEARNING.</h1>
+      <p class="lede" style="margin-top:1.5rem;">
+        A running notebook. Click a note to expand it.
+      </p>
+    </div>
+  </section>
+
+  <section class="section reveal">
+    <div class="container">
+      <div class="notes-list">
+
+        <div class="note-item">
+          <div class="note-item__title">What is PV (Photovoltaics)?</div>
+          <div class="note-item__tag">Solar</div>
+          <div class="note-item__body">
+            <p>PV, or photovoltaics, is the direct conversion of sunlight into electricity using
+            semiconductor cells. A PV system layout defines how modules, strings, inverters, and
+            wiring connect to safely deliver that power to a load or the grid.</p>
+          </div>
+        </div>
+
+        <div class="note-item">
+          <div class="note-item__title">How to Read a Single-Line Diagram (SLD)</div>
+          <div class="note-item__tag">Solar / Electrical</div>
+          <div class="note-item__body">
+            <p>An SLD simplifies a multi-conductor electrical system into a single line per
+            connection. For solar, it typically shows the PV array, combiner boxes, inverter(s),
+            disconnects, metering, and the point of grid interconnection — the whole power path at
+            a glance.</p>
+          </div>
+        </div>
+
+        <div class="note-item">
+          <div class="note-item__title">CCTV System Architecture, Briefly</div>
+          <div class="note-item__tag">Electrical</div>
+          <div class="note-item__body">
+            <p>A typical CCTV system layout maps camera placement for coverage, cable runs (often
+            PoE) back to a switch, and a recorder/NVR for storage. Layout decisions balance
+            coverage, cable length limits, and power budget.</p>
+          </div>
+        </div>
+
+        <div class="note-item">
+          <div class="note-item__title">PoE (Power over Ethernet), Briefly</div>
+          <div class="note-item__tag">Electrical / Networking</div>
+          <div class="note-item__body">
+            <p>PoE delivers power and data over the same Ethernet cable, which is why it's common
+            for CCTV cameras and access points — one cable run instead of two.</p>
+          </div>
+        </div>
+
+        <div class="note-item">
+          <div class="note-item__title">UART vs I&sup2;C vs SPI</div>
+          <div class="note-item__tag">Embedded Systems</div>
+          <div class="note-item__body">
+            <p>UART is a simple two-wire, point-to-point serial link. I&sup2;C uses two shared
+            wires and addresses to talk to multiple devices on one bus. SPI uses separate
+            clock/data lines and chip-select signals for faster, multi-device communication. The
+            right choice depends on speed, wiring, and how many devices need to share the bus.</p>
+          </div>
+        </div>
+
+        <div class="note-item">
+          <div class="note-item__title">ADC &amp; GPIO, Briefly</div>
+          <div class="note-item__tag">Embedded Systems</div>
+          <div class="note-item__body">
+            <p>GPIO pins are general-purpose digital in/out. An ADC (analog-to-digital converter)
+            lets a microcontroller read analog signals — like a sensor's varying voltage — by
+            converting them into digital values it can process.</p>
+          </div>
+        </div>
+
+        <div class="note-item">
+          <div class="note-item__title">ESP32 vs Raspberry Pi</div>
+          <div class="note-item__tag">Embedded Systems</div>
+          <div class="note-item__body">
+            <p>ESP32 is a low-power microcontroller great for sensor nodes and Wi-Fi/Bluetooth IoT
+            devices. Raspberry Pi is a full single-board computer, better suited for tasks needing
+            an operating system, like computer vision or running local services.</p>
+          </div>
+        </div>
+
+        <div class="note-item">
+          <div class="note-item__title">Fiber Communication, Briefly</div>
+          <div class="note-item__tag">Communication</div>
+          <div class="note-item__body">
+            <p>Optical fiber carries data as light pulses instead of electrical signals, allowing
+            much higher bandwidth and longer distances with lower loss than copper — the backbone
+            of most long-distance and high-speed networks.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand">Himanshu Gupta</div>
+          <div class="footer__role">Engineer · Inventor · Builder</div>
+        </div>
+        <ul class="footer__links">
+          <li><a href="mailto:gupta.himanshu1097@gmail.com">Email</a></li>
+          <li><a href="https://linkedin.com/in/himanshugupta10" target="_blank">LinkedIn</a></li>
+          <li><a href="https://github.com/Himanshugupta2024" target="_blank">GitHub</a></li>
+          <li><a href="assets/resume.pdf" target="_blank">Resume</a></li>
+        </ul>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span data-year></span> Himanshu Gupta</span>
+        <span>Engineering · Innovation · IoT · Robotics · AI · Solar PV</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
