@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradSolar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="100%" stop-color="#111c2e" />
+    </linearGradient>
+    <pattern id="gridSolar" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#f59e0b"/>
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGradSolar)" />
+  <rect width="800" height="600" fill="url(#gridSolar)" />
+
+  <!-- Header / Badge -->
+  <rect x="40" y="36" width="370" height="32" rx="4" fill="#1e293b" stroke="#334155" />
+  <text x="52" y="57" fill="#94a3b8" font-family="monospace" font-size="12" font-weight="600" letter-spacing="1">ELECTRICAL SLD // PV-ENG-04</text>
+  <text x="420" y="57" fill="#fbbf24" font-family="monospace" font-size="12" font-weight="600">SOLAR PV ARRAY &amp; GRID INTERCONNECTION</text>
+
+  <!-- Section 1: PV Array -->
+  <g transform="translate(45, 110)">
+    <rect width="210" height="200" rx="8" fill="#111827" stroke="#f59e0b" stroke-width="1.5" />
+    <rect x="12" y="12" width="186" height="24" rx="4" fill="#1e293b" />
+    <text x="20" y="28" fill="#fbbf24" font-family="sans-serif" font-size="11" font-weight="700">PV ARRAY STRINGS</text>
+    
+    <!-- Solar cell visual representations -->
+    <g transform="translate(20, 48)">
+      <rect width="48" height="34" rx="2" fill="#1e3a8a" stroke="#60a5fa" stroke-width="1" />
+      <line x1="24" y1="0" x2="24" y2="34" stroke="#60a5fa" stroke-width="0.5"/>
+      <line x1="0" y1="17" x2="48" y2="17" stroke="#60a5fa" stroke-width="0.5"/>
+
+      <rect x="60" y="0" width="48" height="34" rx="2" fill="#1e3a8a" stroke="#60a5fa" stroke-width="1" />
+      <line x1="84" y1="0" x2="84" y2="34" stroke="#60a5fa" stroke-width="0.5"/>
+      <line x1="60" y1="17" x2="108" y2="17" stroke="#60a5fa" stroke-width="0.5"/>
+
+      <rect x="120" y="0" width="48" height="34" rx="2" fill="#1e3a8a" stroke="#60a5fa" stroke-width="1" />
+      <line x1="144" y1="0" x2="144" y2="34" stroke="#60a5fa" stroke-width="0.5"/>
+      <line x1="120" y1="17" x2="168" y2="17" stroke="#60a5fa" stroke-width="0.5"/>
+    </g>
+
+    <text x="20" y="112" fill="#94a3b8" font-family="monospace" font-size="11">Voc: 49.8V | Isc: 13.9A</text>
+    <text x="20" y="132" fill="#94a3b8" font-family="monospace" font-size="11">540W Mono PERC Panels</text>
+    <text x="20" y="156" fill="#64748b" font-family="monospace" font-size="10">String Config: 18 x 4</text>
+    <text x="20" y="174" fill="#fbbf24" font-family="monospace" font-size="11" font-weight="700">Total DC: 38.88 kWp</text>
+  </g>
+
+  <!-- Flow 1 to Combiner / Inverter -->
+  <line x1="255" y1="210" x2="310" y2="210" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#arrow-amber)" />
+
+  <!-- Section 2: Inverter & MPPT -->
+  <g transform="translate(320, 110)">
+    <rect width="200" height="200" rx="8" fill="#111827" stroke="#38bdf8" stroke-width="1.5" />
+    <rect x="12" y="12" width="176" height="24" rx="4" fill="#1e293b" />
+    <text x="20" y="28" fill="#38bdf8" font-family="sans-serif" font-size="11" font-weight="700">STRING INVERTER (DC-AC)</text>
+    
+    <g transform="translate(20, 50)">
+      <rect width="160" height="50" rx="4" fill="#0f172a" stroke="#334155" />
+      <text x="14" y="20" fill="#94a3b8" font-family="monospace" font-size="10">DC In: 600V - 1000V</text>
+      <text x="14" y="38" fill="#38bdf8" font-family="monospace" font-size="10">Dual MPPT Trackers</text>
+    </g>
+
+    <text x="20" y="130" fill="#94a3b8" font-family="monospace" font-size="11">Pure Sine Wave</text>
+    <text x="20" y="150" fill="#64748b" font-family="monospace" font-size="10">Efficiency: 98.6%</text>
+    <text x="20" y="174" fill="#38bdf8" font-family="monospace" font-size="11" font-weight="700">AC Out: 415V 3-Phase</text>
+  </g>
+
+  <!-- Flow 2 to AC Distribution -->
+  <line x1="520" y1="210" x2="575" y2="210" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#arrow-blue)" />
+
+  <!-- Section 3: AC Distribution & Protection -->
+  <g transform="translate(585, 110)">
+    <rect width="170" height="200" rx="8" fill="#111827" stroke="#10b981" stroke-width="1.5" />
+    <rect x="12" y="12" width="146" height="24" rx="4" fill="#1e293b" />
+    <text x="20" y="28" fill="#34d399" font-family="sans-serif" font-size="11" font-weight="700">ACDB &amp; PROTECTION</text>
+
+    <text x="20" y="65" fill="#94a3b8" font-family="monospace" font-size="11">63A 4-Pole MCCB</text>
+    <text x="20" y="85" fill="#94a3b8" font-family="monospace" font-size="11">Type-II SPD (Surge)</text>
+    <text x="20" y="115" fill="#64748b" font-family="monospace" font-size="10">Bi-Directional Meter</text>
+    <text x="20" y="135" fill="#64748b" font-family="monospace" font-size="10">Earth Fault Relay</text>
+    <text x="20" y="174" fill="#10b981" font-family="monospace" font-size="11" font-weight="700">Grid Synchronized</text>
+  </g>
+
+  <!-- Bottom Panel: Engineering Standards & Design specs -->
+  <g transform="translate(45, 345)">
+    <rect width="710" height="205" rx="8" fill="#111827" stroke="#334155" stroke-width="1.5" />
+    <rect x="16" y="14" width="678" height="28" rx="4" fill="#1e293b" />
+    <text x="28" y="33" fill="#e2e8f0" font-family="sans-serif" font-size="12" font-weight="700">ENGINEERING DESIGN METRICS &amp; STANDARDS COMPLIANCE</text>
+
+    <!-- Column 1 -->
+    <g transform="translate(24, 60)">
+      <text x="0" y="16" fill="#f59e0b" font-family="monospace" font-size="11" font-weight="700">TOOLS USED</text>
+      <text x="0" y="38" fill="#94a3b8" font-family="sans-serif" font-size="11">AutoCAD Electrical 2024</text>
+      <text x="0" y="58" fill="#94a3b8" font-family="sans-serif" font-size="11">PVsyst v7.4 Yield Analysis</text>
+      <text x="0" y="78" fill="#94a3b8" font-family="sans-serif" font-size="11">HelioScope 3D Shade Calc</text>
+      <text x="0" y="98" fill="#94a3b8" font-family="sans-serif" font-size="11">ETAP Cable Sizing &amp; Drop</text>
+    </g>
+
+    <!-- Column 2 -->
+    <g transform="translate(260, 60)">
+      <text x="0" y="16" fill="#38bdf8" font-family="monospace" font-size="11" font-weight="700">DESIGN SPECIFICATIONS</text>
+      <text x="0" y="38" fill="#94a3b8" font-family="sans-serif" font-size="11">PR Ratio: &gt; 81.4% Target</text>
+      <text x="0" y="58" fill="#94a3b8" font-family="sans-serif" font-size="11">Specific Yield: 1650 kWh/kWp</text>
+      <text x="0" y="78" fill="#94a3b8" font-family="sans-serif" font-size="11">Max DC Voltage Drop &lt; 1.5%</text>
+      <text x="0" y="98" fill="#94a3b8" font-family="sans-serif" font-size="11">Tilt: 22° True South Azimuth</text>
+    </g>
+
+    <!-- Column 3 -->
+    <g transform="translate(500, 60)">
+      <text x="0" y="16" fill="#10b981" font-family="monospace" font-size="11" font-weight="700">REGULATORY STANDARDS</text>
+      <text x="0" y="38" fill="#94a3b8" font-family="sans-serif" font-size="11">IEC 62548 Array Design</text>
+      <text x="0" y="58" fill="#94a3b8" font-family="sans-serif" font-size="11">IEC 61215 Panel Reliability</text>
+      <text x="0" y="78" fill="#94a3b8" font-family="sans-serif" font-size="11">CEA (Measures relating to Safety)</text>
+      <text x="0" y="98" fill="#94a3b8" font-family="sans-serif" font-size="11">IS 3043 Earthing Standards</text>
+    </g>
+  </g>
+</svg>

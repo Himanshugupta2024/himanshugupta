@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradCCTV" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="100%" stop-color="#121b2d" />
+    </linearGradient>
+    <pattern id="gridCCTV" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1f293d" stroke-width="1" stroke-opacity="0.6"/>
+    </pattern>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#10b981"/>
+    </marker>
+    <marker id="arrow-sky" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#0ea5e9"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGradCCTV)" />
+  <rect width="800" height="600" fill="url(#gridCCTV)" />
+
+  <!-- Header / Badge -->
+  <rect x="40" y="36" width="370" height="32" rx="4" fill="#1e293b" stroke="#334155" />
+  <text x="52" y="57" fill="#94a3b8" font-family="monospace" font-size="12" font-weight="600" letter-spacing="1">INFRASTRUCTURE // SEC-PA-03</text>
+  <text x="420" y="57" fill="#38bdf8" font-family="monospace" font-size="12" font-weight="600">CCTV, PA &amp; LOW VOLTAGE DISTRIBUTION</text>
+
+  <!-- Block 1: IP Cameras & Field Devices -->
+  <g transform="translate(45, 110)">
+    <rect width="210" height="190" rx="8" fill="#111827" stroke="#0ea5e9" stroke-width="1.5" />
+    <rect x="12" y="12" width="186" height="24" rx="4" fill="#1e293b" />
+    <text x="20" y="28" fill="#38bdf8" font-family="sans-serif" font-size="11" font-weight="700">FIELD DEVICES &amp; CAMERAS</text>
+    
+    <text x="20" y="65" fill="#94a3b8" font-family="monospace" font-size="11">4K IP Dome Cameras</text>
+    <text x="20" y="85" fill="#64748b" font-family="monospace" font-size="10">PoE 802.3at / af</text>
+    
+    <text x="20" y="115" fill="#94a3b8" font-family="monospace" font-size="11">PTZ Perimeter Units</text>
+    <text x="20" y="135" fill="#64748b" font-family="monospace" font-size="10">IR Night Vision (150m)</text>
+    
+    <text x="20" y="165" fill="#38bdf8" font-family="monospace" font-size="10" font-weight="700">Zoned PA Horn Speakers</text>
+  </g>
+
+  <!-- Flow 1 to Switches -->
+  <line x1="255" y1="205" x2="310" y2="205" stroke="#0ea5e9" stroke-width="2" marker-end="url(#arrow-sky)" />
+
+  <!-- Block 2: Managed Network & Server -->
+  <g transform="translate(320, 110)">
+    <rect width="200" height="190" rx="8" fill="#111827" stroke="#6366f1" stroke-width="1.5" />
+    <rect x="12" y="12" width="176" height="24" rx="4" fill="#1e293b" />
+    <text x="20" y="28" fill="#818cf8" font-family="sans-serif" font-size="11" font-weight="700">POE SWITCHES &amp; NVR</text>
+    
+    <text x="20" y="65" fill="#94a3b8" font-family="monospace" font-size="11">Gigabit Managed PoE+</text>
+    <text x="20" y="85" fill="#64748b" font-family="monospace" font-size="10">VLAN Isolation (Security)</text>
+    
+    <text x="20" y="115" fill="#94a3b8" font-family="monospace" font-size="11">64-Channel NVR Matrix</text>
+    <text x="20" y="135" fill="#64748b" font-family="monospace" font-size="10">RAID-6 Storage (90 Days)</text>
+
+    <text x="20" y="165" fill="#818cf8" font-family="monospace" font-size="10" font-weight="700">Fiber Backbone Uplink</text>
+  </g>
+
+  <!-- Flow 2 to Control Room -->
+  <line x1="520" y1="205" x2="575" y2="205" stroke="#6366f1" stroke-width="2" marker-end="url(#arrow-green)" />
+
+  <!-- Block 3: Control Room & Audio Amp -->
+  <g transform="translate(585, 110)">
+    <rect width="170" height="190" rx="8" fill="#111827" stroke="#10b981" stroke-width="1.5" />
+    <rect x="12" y="12" width="146" height="24" rx="4" fill="#1e293b" />
+    <text x="20" y="28" fill="#34d399" font-family="sans-serif" font-size="11" font-weight="700">CENTRAL CMS &amp; PA</text>
+
+    <text x="20" y="65" fill="#94a3b8" font-family="monospace" font-size="11">Multi-Screen Video Wall</text>
+    <text x="20" y="85" fill="#64748b" font-family="monospace" font-size="10">AI Motion Triggers</text>
+
+    <text x="20" y="115" fill="#94a3b8" font-family="monospace" font-size="11">100V Line PA Amp</text>
+    <text x="20" y="135" fill="#64748b" font-family="monospace" font-size="10">Emergency Override</text>
+
+    <text x="20" y="165" fill="#10b981" font-family="monospace" font-size="10" font-weight="700">Online UPS Backup</text>
+  </g>
+
+  <!-- Bottom Panel: Design Specs -->
+  <g transform="translate(45, 335)">
+    <rect width="710" height="215" rx="8" fill="#111827" stroke="#334155" stroke-width="1.5" />
+    <rect x="16" y="14" width="678" height="28" rx="4" fill="#1e293b" />
+    <text x="28" y="33" fill="#e2e8f0" font-family="sans-serif" font-size="12" font-weight="700">ELECTRICAL SCHEMATICS &amp; CONDUIT ROUTING CRITERIA</text>
+
+    <g transform="translate(24, 60)">
+      <text x="0" y="16" fill="#38bdf8" font-family="monospace" font-size="11" font-weight="700">CABLING &amp; CONTAINMENT</text>
+      <text x="0" y="38" fill="#94a3b8" font-family="sans-serif" font-size="11">Cat6 UTP / STP Structured Cabling</text>
+      <text x="0" y="58" fill="#94a3b8" font-family="sans-serif" font-size="11">Armored Fiber Optic Inter-Building Links</text>
+      <text x="0" y="78" fill="#94a3b8" font-family="sans-serif" font-size="11">GI Conduit &amp; Cable Tray Separation from HV</text>
+      <text x="0" y="98" fill="#94a3b8" font-family="sans-serif" font-size="11">Fire-Resistant 2-Core PA Speaker Cables</text>
+    </g>
+
+    <g transform="translate(360, 60)">
+      <text x="0" y="16" fill="#34d399" font-family="monospace" font-size="11" font-weight="700">POWER &amp; EARTHING</text>
+      <text x="0" y="38" fill="#94a3b8" font-family="sans-serif" font-size="11">Dedicated Isolation Transformer for Surveillance Rack</text>
+      <text x="0" y="58" fill="#94a3b8" font-family="sans-serif" font-size="11">Clean Grounding Pit (&lt; 1 Ohm Earth Resistance)</text>
+      <text x="0" y="78" fill="#94a3b8" font-family="sans-serif" font-size="11">Class C Lightning &amp; Transient Surge Diverters</text>
+      <text x="0" y="98" fill="#94a3b8" font-family="sans-serif" font-size="11">Centralized Battery Bank for 4-Hour Autonomy</text>
+    </g>
+  </g>
+</svg>

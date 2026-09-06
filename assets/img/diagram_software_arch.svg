@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradSoft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a101d" />
+      <stop offset="100%" stop-color="#111a2e" />
+    </linearGradient>
+    <pattern id="gridSoft" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1f293d" stroke-width="1" stroke-opacity="0.5"/>
+    </pattern>
+    <marker id="arrow-indigo" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#6366f1"/>
+    </marker>
+    <marker id="arrow-teal" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#14b8a6"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGradSoft)" />
+  <rect width="800" height="600" fill="url(#gridSoft)" />
+
+  <!-- Header / Badge -->
+  <rect x="40" y="36" width="370" height="32" rx="4" fill="#1e293b" stroke="#334155" />
+  <text x="52" y="57" fill="#94a3b8" font-family="monospace" font-size="12" font-weight="600" letter-spacing="1">FULL-STACK ARCHITECTURE // SYSTEM-05</text>
+  <text x="420" y="57" fill="#818cf8" font-family="monospace" font-size="12" font-weight="600">CLOUD, BACKEND &amp; REALTIME DATA LAYER</text>
+
+  <!-- Block 1: Client / Frontend -->
+  <g transform="translate(45, 110)">
+    <rect width="210" height="190" rx="8" fill="#111827" stroke="#6366f1" stroke-width="1.5" />
+    <rect x="12" y="12" width="186" height="24" rx="4" fill="#1e293b" />
+    <text x="20" y="28" fill="#a5b4fc" font-family="sans-serif" font-size="11" font-weight="700">CLIENT APPLICATION</text>
+    
+    <text x="20" y="65" fill="#94a3b8" font-family="monospace" font-size="11">Responsive Web &amp; Mobile</text>
+    <text x="20" y="85" fill="#64748b" font-family="monospace" font-size="10">Stateful UI Component Tree</text>
+    
+    <text x="20" y="115" fill="#94a3b8" font-family="monospace" font-size="11">Client Caching &amp; Optimistic UI</text>
+    <text x="20" y="135" fill="#64748b" font-family="monospace" font-size="10">Token-Based Auth (JWT)</text>
+    
+    <text x="20" y="165" fill="#818cf8" font-family="monospace" font-size="10" font-weight="700">Sub-100ms Interaction Latency</text>
+  </g>
+
+  <!-- Flow 1 to API Layer -->
+  <line x1="255" y1="205" x2="310" y2="205" stroke="#6366f1" stroke-width="2" marker-end="url(#arrow-indigo)" />
+
+  <!-- Block 2: API & Services -->
+  <g transform="translate(320, 110)">
+    <rect width="200" height="190" rx="8" fill="#111827" stroke="#14b8a6" stroke-width="1.5" />
+    <rect x="12" y="12" width="176" height="24" rx="4" fill="#1e293b" />
+    <text x="20" y="28" fill="#2dd4bf" font-family="sans-serif" font-size="11" font-weight="700">CORE API GATEWAY</text>
+    
+    <text x="20" y="65" fill="#94a3b8" font-family="monospace" font-size="11">RESTful &amp; WebSocket Endpoints</text>
+    <text x="20" y="85" fill="#64748b" font-family="monospace" font-size="10">Microservices Routing</text>
+    
+    <text x="20" y="115" fill="#94a3b8" font-family="monospace" font-size="11">Business Rules &amp; Validation</text>
+    <text x="20" y="135" fill="#64748b" font-family="monospace" font-size="10">Rate Limiter &amp; Logging</text>
+
+    <text x="20" y="165" fill="#14b8a6" font-family="monospace" font-size="10" font-weight="700">Node.js / Python Runtime</text>
+  </g>
+
+  <!-- Flow 2 to Data Layer -->
+  <line x1="520" y1="205" x2="575" y2="205" stroke="#14b8a6" stroke-width="2" marker-end="url(#arrow-teal)" />
+
+  <!-- Block 3: Database & Cache -->
+  <g transform="translate(585, 110)">
+    <rect width="170" height="190" rx="8" fill="#111827" stroke="#38bdf8" stroke-width="1.5" />
+    <rect x="12" y="12" width="146" height="24" rx="4" fill="#1e293b" />
+    <text x="20" y="28" fill="#38bdf8" font-family="sans-serif" font-size="11" font-weight="700">DATA PERSISTENCE</text>
+
+    <text x="20" y="65" fill="#94a3b8" font-family="monospace" font-size="11">PostgreSQL Relational</text>
+    <text x="20" y="85" fill="#64748b" font-family="monospace" font-size="10">ACID Transaction Safety</text>
+
+    <text x="20" y="115" fill="#94a3b8" font-family="monospace" font-size="11">Redis Memory Cache</text>
+    <text x="20" y="135" fill="#64748b" font-family="monospace" font-size="10">Pub/Sub Message Bus</text>
+
+    <text x="20" y="165" fill="#38bdf8" font-family="monospace" font-size="10" font-weight="700">S3 Cloud Asset Storage</text>
+  </g>
+
+  <!-- Bottom Panel: Scalability & DevOps -->
+  <g transform="translate(45, 335)">
+    <rect width="710" height="215" rx="8" fill="#111827" stroke="#334155" stroke-width="1.5" />
+    <rect x="16" y="14" width="678" height="28" rx="4" fill="#1e293b" />
+    <text x="28" y="33" fill="#e2e8f0" font-family="sans-serif" font-size="12" font-weight="700">INFRASTRUCTURE, DEPLOYMENT PIPELINE &amp; SECURITY</text>
+
+    <g transform="translate(24, 60)">
+      <text x="0" y="16" fill="#818cf8" font-family="monospace" font-size="11" font-weight="700">CONTAINERIZATION &amp; HOSTING</text>
+      <text x="0" y="38" fill="#94a3b8" font-family="sans-serif" font-size="11">Docker Containerized Microservices</text>
+      <text x="0" y="58" fill="#94a3b8" font-family="sans-serif" font-size="11">Nginx Reverse Proxy &amp; SSL Termination</text>
+      <text x="0" y="78" fill="#94a3b8" font-family="sans-serif" font-size="11">GitHub Actions Automated CI/CD Test &amp; Build</text>
+      <text x="0" y="98" fill="#94a3b8" font-family="sans-serif" font-size="11">Cloudflare CDN Edge Caching &amp; DDoS Guard</text>
+    </g>
+
+    <g transform="translate(380, 60)">
+      <text x="0" y="16" fill="#2dd4bf" font-family="monospace" font-size="11" font-weight="700">OBSERVABILITY &amp; MONITORING</text>
+      <text x="0" y="38" fill="#94a3b8" font-family="sans-serif" font-size="11">Structured JSON Logging &amp; APM Metrics</text>
+      <text x="0" y="58" fill="#94a3b8" font-family="sans-serif" font-size="11">Automated Health Check &amp; Failure Recovery</text>
+      <text x="0" y="78" fill="#94a3b8" font-family="sans-serif" font-size="11">Database Read Replicas for High Concurrency</text>
+      <text x="0" y="98" fill="#94a3b8" font-family="sans-serif" font-size="11">Zero-Downtime Rolling Production Deployments</text>
+    </g>
+  </g>
+</svg>
